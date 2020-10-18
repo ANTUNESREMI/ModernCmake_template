@@ -2,8 +2,8 @@
 
 Moderne Cmake Template C/C++
 
-Cmake v3.12 minimum
+Cmake v3.12 - v3.18
 
-1 - cmake -S . -B build
-2 - cmake --build build
-3 ./exe
+* cmake -S . -B build
+* cmake --build build
+* ./exe

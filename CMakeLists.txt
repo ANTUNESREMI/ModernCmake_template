@@ -12,9 +12,9 @@ endif()
 #--------------------------------------------------------------------
 
 # C Properties
-set(CMAKE_C_COMPILER "gcc")
+set( CMAKE_C_COMPILER "gcc" )
 set( CMAKE_POSITION_INDEPENDENT_CODE ON )
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
+set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS}" )
 
 # C++ Properties
 #set(CMAKE_CXX_COMPILER "g++")
@@ -31,7 +31,6 @@ project(    MyProject
     VERSION ${project_version} 
     DESCRIPTION ${project_description} 
     HOMEPAGE_URL ${project_homepage} 
-    # C Project
     LANGUAGES C
     # C++ Project
     #LANGUAGES CXX
@@ -40,10 +39,10 @@ project(    MyProject
 #--------------------------------------------------------------------
 # Add subdirectories
 #--------------------------------------------------------------------
-add_subdirectory( apps )
+add_subdirectory( app )
 
 # Library subdirectory
-add_subdirectory( lib ) 
+#add_subdirectory( lib ) 
 
 #--------------------------------------------------------------------
 # Package
@@ -56,7 +55,7 @@ add_subdirectory( lib )
 # Program Core
 #--------------------------------------------------------------------
 
-file(GLOB_RECURSE SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c")
 file(GLOB_RECURSE HEADER "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
 
 #--------------------------------------------------------------------

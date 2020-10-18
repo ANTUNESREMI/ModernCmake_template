@@ -4,7 +4,7 @@ add_executable( exe )
 
 target_sources( exe
     PRIVATE 
-        "main.cpp" 
+        "main.c" 
 ) 
 
 target_link_libraries( exe
